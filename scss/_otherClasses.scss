@@ -11,7 +11,7 @@
     font-weight: 500;
     border-radius: 12.4px;
     padding: 12px 32px;
-    font-size: 16px;
+    font-size: clamp(0.813rem, 0.745rem + 0.28vw, 1rem);
 }
 
 .button-Notfill {
@@ -20,6 +20,6 @@
     color: #6c5fbc;
     border-radius: 12.4px;
     padding: 12px 32px;
-    font-size: 16px;
+    font-size: clamp(0.813rem, 0.745rem + 0.28vw, 1rem);
     border: #6c5fbc solid 1px;
 }
