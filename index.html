@@ -20,16 +20,38 @@
                         <img src="/img/icons/Logo.svg" alt="logo" class="navigation__icon">
                         <p class="navigation__eatly">eatly</p>
                     <a/>
-                    <ul class="navigation__list flex-base">
+                    <ul class="navigation__list flex-base burger-nonMobile">
                         <li class="navigation__item navigation__item_hover"><a href="">Menu</a></li>
                         <li class="navigation__item navigation__item_hover"><a href="">Blog</a></li>
                         <li class="navigation__item navigation__item_hover"><a href="">Pricing</a></li>
                         <li class="navigation__item navigation__item_hover"><a href="">Contact</a></li>
                     </ul>
                 </div>
-                <div class="navigation__buttons flex-base">
+                <div class="navigation__buttons flex-base burger-nonMobile">
                     <button class="navigation__button navigation__button-grey">Login</button>
                     <button class="navigation__button button-fill">Sign Up</button>
+                </div>
+                <div class="">                
+                    <img src="/img/icons/menuBurger.svg" alt="menu" class="navigation__burger burger-mobile">    
+                    <div class="navigation__burger-menu burger burger-mobile-modal">
+                        <div class="burger__container ">
+                            <div class="navigator__container">
+                                <ul class="navigation__list ">
+                                    <li class="navigation__item navigation__item_hover"><a href="">Menu</a></li>
+                                    <li class="navigation__item navigation__item_hover"><a href="">Blog</a></li>
+                                    <li class="navigation__item navigation__item_hover"><a href="">Pricing</a></li>
+                                    <li class="navigation__item navigation__item_hover"><a href="">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="navigation__buttons ">
+                                <button class="navigation__button button-fill">Sign Up</button>
+                                <button class="navigation__button navigation__button-grey">Login</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 </div>
             </naw>
             <div class="header__enjoy-block enjoy-block">
@@ -59,11 +81,12 @@
                 </div>
             </div>
         </header>
-
         <main>
         </main>
 
         <footer></footer>
     </div>
+
+    <script src="/js/header.js"></script>
 </body>
 </html>

@@ -96,7 +96,7 @@ td, th {
 .flex-base {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .button-fill {
@@ -119,6 +119,22 @@ td, th {
   border: #6c5fbc solid 1px;
 }
 
+.burger-mobile {
+  display: none;
+}
+
+.burger-nonMobile {
+  display: flex;
+}
+
+.burger-mobile-modal {
+  display: none;
+}
+
+.burger-mobile-modal_active {
+  display: block; /* или другое значение, которое вам нужно */
+}
+
 .header {
   padding: 60px 0 0 0;
   display: flex;
@@ -135,7 +151,7 @@ td, th {
   background-color: grey;
   opacity: 0.35;
   position: absolute;
-  top: 190%;
+  top: 110%;
 }
 .header__enjoy-block {
   width: 100%;
@@ -147,7 +163,7 @@ td, th {
   margin: 0 0 25px 0;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 .navigation__container {
@@ -189,11 +205,15 @@ td, th {
   color: #606060;
   background-color: transparent;
 }
+.navigation__burger {
+  margin: 0 0 15px 5px;
+}
 
 .enjoy-block__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 0 70px;
 }
 .enjoy-block__decorations {
   display: flex;
@@ -268,6 +288,17 @@ td, th {
   padding: 5px 0 0 0;
 }
 
+.burger__container {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  flex-direction: column;
+  row-gap: 10px;
+  box-shadow: 4px 4px 25px 0px rgba(34, 60, 80, 0.47);
+  padding: 15px;
+  border-radius: 10px;
+}
+
 @media (max-width: 1200px) {
   .enjoy-block__img {
     max-width: 55vw;
@@ -281,5 +312,53 @@ td, th {
   .navigation__buttons {
     -moz-column-gap: 0px;
          column-gap: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .enjoy-block__container {
+    flex-direction: column;
+  }
+  .enjoy-block__container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .enjoy-block__title {
+    text-align: center;
+  }
+  .enjoy-block__text {
+    text-align: center;
+  }
+  .enjoy-block__img {
+    max-width: 75vw;
+  }
+  .enjoy-block__decoration-block {
+    background-color: #201f1f;
+    opacity: 1;
+  }
+  .enjoy-block__decoration-text {
+    color: #201f1f;
+    opacity: 1;
+  }
+  .navigation__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .navigation__button {
+    width: 50%;
+    padding: 10px;
+  }
+  .burger__container {
+    width: 200px;
+  }
+  .rating {
+    margin: 0 0 40px 0;
+  }
+  .burger-mobile {
+    display: block;
+  }
+  .burger-nonMobile {
+    display: none;
   }
 }

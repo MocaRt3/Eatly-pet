@@ -1,7 +1,7 @@
 .flex-base {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .button-fill {
@@ -22,4 +22,18 @@
     padding: 12px 32px;
     font-size: clamp(0.813rem, 0.745rem + 0.28vw, 1rem);
     border: #6c5fbc solid 1px;
+}
+.burger-mobile{
+    display: none;
+}
+.burger-nonMobile{
+    display: flex;
+}
+
+.burger-mobile-modal {
+    display: none;
+}
+
+.burger-mobile-modal_active {
+    display: block; /* или другое значение, которое вам нужно */
 }
