@@ -12,6 +12,11 @@
     border-radius: 12.4px;
     padding: 12px 32px;
     font-size: clamp(0.813rem, 0.745rem + 0.28vw, 1rem);
+    transition: all .4s ease;
+}
+
+.button-fill:hover{
+    background-color: #887cd7;
 }
 
 .button-Notfill {
@@ -22,6 +27,12 @@
     padding: 12px 32px;
     font-size: clamp(0.813rem, 0.745rem + 0.28vw, 1rem);
     border: #6c5fbc solid 1px;
+    transition: all .4s ease;
+}
+
+.button-Notfill:hover{
+    background-color: #6c5fbc;
+    color: #fff;
 }
 .burger-mobile{
     display: none;
