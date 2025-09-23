@@ -147,6 +147,48 @@ td, th {
   display: block; /* или другое значение, которое вам нужно */
 }
 
+.restaurants-card__color--yellow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #daa31a;
+  background-color: #f7edd0;
+  border-radius: 8px;
+  width: 70px;
+  height: 20px;
+}
+
+.restaurants-card__color--red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #FB471D;
+  background-color: #F7C5BA;
+  border-radius: 8px;
+  width: 70px;
+  height: 20px;
+}
+
+.restaurants-card__color--green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #daa31a;
+  background-color: #f7edd0;
+  border-radius: 8px;
+  width: 70px;
+  height: 20px;
+}
+
 .header {
   padding: 60px 0 0 0;
   display: flex;
@@ -500,4 +542,67 @@ td, th {
   .premium__button-img {
     transform: rotate(90deg);
   }
+}
+.restaurants__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.restaurants__title {
+  font-family: "Public Sans", sans-serif;
+  font-size: clamp(1.875rem, 0.703rem + 2.34vw, 2.813rem);
+  font-weight: 700;
+  margin: 0 0 35px 0;
+}
+.restaurants__span-purple {
+  color: #5c4eae;
+}
+.restaurants__container {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.restaurants__section {
+  box-shadow: 0px 4px 39px 11px rgba(34, 60, 80, 0.2);
+  border-radius: 12px;
+}
+.restaurants-card__img {
+  border-radius: 12px;
+}
+.restaurants-card__color {
+  padding: 0 20px;
+  margin: 10px 0;
+  margin-left: 20px;
+}
+.restaurants-card__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  color: #323142;
+  padding: 0 20px;
+}
+.restaurants-card__rating-container {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 0 20px;
+  margin: 0 0 20px 0;
+}
+.restaurants-card__text {
+  font-family: "Inter", sans-serif;
+  color: #8E97A6;
+}
+.restaurants-card__text--after::after {
+  content: "•";
+  margin: 0 0 0 7px;
+}
+.restaurants-card__fix {
+  padding: 12px;
+  border-radius: 50%;
+  margin-left: auto;
+  background-color: #DBD9EE;
+  margin-top: -35px;
 }

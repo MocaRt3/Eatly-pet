@@ -1,0 +1,82 @@
+.restaurants {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    &__title {
+        font-family: 'Public Sans', sans-serif;
+        font-size: clamp(1.875rem, 0.703rem + 2.34vw, 2.813rem);
+        font-weight: 700;
+        margin: 0 0 35px 0;
+    }
+
+    &__span-purple {
+        color: #5c4eae;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+    }
+
+    &__section {
+        box-shadow: 0px 4px 39px 11px rgba(34, 60, 80, 0.2);
+        border-radius: 12px;
+    }
+
+    &__more {
+    }
+}
+.restaurants-card {
+    
+    &__img {
+        border-radius: 12px;
+    }
+
+    &__color {
+        padding: 0 20px;
+        margin: 10px 0;
+        margin-left: 20px;
+    }
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 23px;
+        font-weight: 600;
+        color: #323142;
+        padding: 0 20px;
+    }
+
+    &__rating-container {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        padding: 0 20px;
+        margin: 0 0 20px 0;
+    }
+
+    &__text {
+        font-family: 'Inter', sans-serif;
+        color: #8E97A6;
+    }
+    &__text--after::after{
+        content: '•';
+        margin: 0 0 0 7px;
+        
+    }
+
+    &__icon {
+    }
+
+    &__fix {
+        padding: 12px;
+        border-radius: 50%;
+        margin-left: auto;
+        background-color: #DBD9EE;
+        margin-top: -35px;
+    }
+}

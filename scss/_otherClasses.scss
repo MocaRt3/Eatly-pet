@@ -12,10 +12,10 @@
     border-radius: 12.4px;
     padding: 12px 32px;
     font-size: clamp(0.813rem, 0.745rem + 0.28vw, 1rem);
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 }
 
-.button-fill:hover{
+.button-fill:hover {
     background-color: #887cd7;
 }
 
@@ -27,17 +27,17 @@
     padding: 12px 32px;
     font-size: clamp(0.813rem, 0.745rem + 0.28vw, 1rem);
     border: #6c5fbc solid 1px;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 }
 
-.button-Notfill:hover{
+.button-Notfill:hover {
     background-color: #6c5fbc;
     color: #fff;
 }
-.burger-mobile{
+.burger-mobile {
     display: none;
 }
-.burger-nonMobile{
+.burger-nonMobile {
     display: flex;
 }
 
@@ -47,4 +47,49 @@
 
 .burger-mobile-modal_active {
     display: block; /* или другое значение, которое вам нужно */
+}
+
+.restaurants-card__color--yellow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #daa31a;
+    background-color: #f7edd0;
+    border-radius: 8px;
+
+    width: 70px;
+    height: 20px;
+}
+
+.restaurants-card__color--red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #FB471D;
+    background-color: #F7C5BA;
+    border-radius: 8px;
+
+    width: 70px;
+    height: 20px;
+}
+
+.restaurants-card__color--green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #daa31a;
+    background-color: #f7edd0;
+    border-radius: 8px;
+
+    width: 70px;
+    height: 20px;
 }
