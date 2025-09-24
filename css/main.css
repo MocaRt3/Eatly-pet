@@ -543,6 +543,22 @@ td, th {
     transform: rotate(90deg);
   }
 }
+.restaurants::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 1.5px;
+  background-color: grey;
+  opacity: 0.35;
+  margin: 70px 0 0 0;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 100px 0;
+}
 .restaurants__wrapper {
   display: flex;
   flex-direction: column;
@@ -564,10 +580,39 @@ td, th {
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
+.restaurants__container--show {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  opacity: 0;
+  gap: 30px;
+  transition: all 0.5s linear;
+  transform: translateY(-100%);
+}
+.restaurants__container--margin {
+  margin: 0 0 30px 0;
+}
 .restaurants__section {
   box-shadow: 0px 4px 39px 11px rgba(34, 60, 80, 0.2);
   border-radius: 12px;
 }
+.restaurants__more {
+  display: flex;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  justify-content: end;
+  width: 100%;
+  margin: 70px 0 0 0;
+}
+.restaurants__more p {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.813rem, 0.618rem + 0.87vw, 1.375rem);
+  font-weight: 500;
+  color: #acadb9;
+}
+.restaurants__more img {
+  background-color: #acadb9;
+}
+
 .restaurants-card__img {
   border-radius: 12px;
 }
@@ -593,7 +638,7 @@ td, th {
 }
 .restaurants-card__text {
   font-family: "Inter", sans-serif;
-  color: #8E97A6;
+  color: #8e97a6;
 }
 .restaurants-card__text--after::after {
   content: "•";
@@ -603,6 +648,11 @@ td, th {
   padding: 12px;
   border-radius: 50%;
   margin-left: auto;
-  background-color: #DBD9EE;
+  background-color: #dbd9ee;
   margin-top: -35px;
+}
+
+.show-translate {
+  transform: translateY(0%);
+  opacity: 1;
 }
