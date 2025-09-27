@@ -61,6 +61,7 @@
         justify-content: end;
         width: 100%;
         margin: 70px 0 40px 0;
+        cursor: pointer;
     }
 
     &__more p {
@@ -68,6 +69,7 @@
         font-size: clamp(0.813rem, 0.618rem + 0.87vw, 1.375rem);
         font-weight: 500;
         color: #acadb9;
+        
     }
     &__more img {
         background-color: #acadb9;
@@ -118,12 +120,7 @@
     }
 }
 
-.show-translate {
-    visibility: visible;
-    transform: translateY(0%);
-    opacity: 1;
-    max-height: 100000px;
-}
+
 
 @media (max-width: 1000px) {
     .restaurants-card {

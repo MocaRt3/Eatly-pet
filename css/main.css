@@ -605,6 +605,7 @@ td, th {
   justify-content: end;
   width: 100%;
   margin: 70px 0 40px 0;
+  cursor: pointer;
 }
 .restaurants__more p {
   font-family: "Poppins", sans-serif;
@@ -655,13 +656,6 @@ td, th {
   margin-top: -35px;
 }
 
-.show-translate {
-  visibility: visible;
-  transform: translateY(0%);
-  opacity: 1;
-  max-height: 100000px;
-}
-
 @media (max-width: 1000px) {
   .restaurants-card__title {
     font-size: 16px;
@@ -687,4 +681,99 @@ td, th {
   margin-bottom: 30px;
   box-shadow: none;
   border: #8e97a6 solid 1px; /* Добавляем отступ для секций */
+}
+
+.dishes::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 1.5px;
+  background-color: grey;
+  opacity: 0.35;
+  margin: 70px 0 0 0;
+}
+
+.dishes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 100px 0;
+}
+.dishes__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.dishes__title {
+  font-family: "Public Sans", sans-serif;
+  font-size: clamp(1.875rem, 0.703rem + 2.34vw, 2.813rem);
+  font-weight: 700;
+  margin: 0 0 35px 0;
+}
+.dishes__span-purple {
+  color: #5c4eae;
+}
+.dishes__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.dishes__container--margin {
+  margin: 0 0 35px 0;
+}
+.dishes__section {
+  border: #8e97a6 solid 1px; /* Добавляем отступ для секций */
+  border-radius: 12px;
+}
+.dishes__container--show {
+  display: grid;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  opacity: 0;
+  gap: 30px;
+  transition: all 0.5s linear;
+  transform: translateY(-100%);
+}
+
+.dishes-card__hearth {
+  display: block;
+  margin-left: auto;
+  padding: 20px 20px 0 20px;
+}
+.dishes-card__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 20px 20px;
+}
+.dishes-card__price p {
+  font-size: 23px;
+  font-weight: 700;
+}
+.dishes-card__price-small {
+  font-size: 16px;
+  color: #8e97a6;
+}
+.dishes-card__price div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #323142;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+@media (max-width: 800px) {
+  .dishes__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.show-translate {
+  visibility: visible;
+  transform: translateY(0%);
+  opacity: 1;
+  max-height: 100000px;
 }
