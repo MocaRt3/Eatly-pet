@@ -52,8 +52,8 @@
     }
 
     &__section {
-        box-shadow: 0px 4px 39px 11px rgba(34, 60, 80, 0.2);
         border-radius: 12px;
+        background-color: #fff;
     }
     &__more {
         display: flex;
@@ -151,5 +151,4 @@
 .restaurants__section {
     margin-bottom: 30px;
     box-shadow: none; 
-    border: #8e97a6 solid 1px;/* Добавляем отступ для секций */
 }

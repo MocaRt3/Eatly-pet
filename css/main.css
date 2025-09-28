@@ -595,8 +595,8 @@ td, th {
   margin: 0 0 30px 0;
 }
 .restaurants__section {
-  box-shadow: 0px 4px 39px 11px rgba(34, 60, 80, 0.2);
   border-radius: 12px;
+  background-color: #fff;
 }
 .restaurants__more {
   display: flex;
@@ -680,7 +680,6 @@ td, th {
 .restaurants__section {
   margin-bottom: 30px;
   box-shadow: none;
-  border: #8e97a6 solid 1px; /* Добавляем отступ для секций */
 }
 
 .dishes::after {
@@ -723,7 +722,7 @@ td, th {
   margin: 0 0 35px 0;
 }
 .dishes__section {
-  border: #8e97a6 solid 1px; /* Добавляем отступ для секций */
+  background-color: #fff;
   border-radius: 12px;
 }
 .dishes__container--show {
@@ -771,9 +770,72 @@ td, th {
     grid-template-columns: 1fr 1fr;
   }
 }
+.purchases::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 1.5px;
+  background-color: grey;
+  opacity: 0.35;
+  margin: 70px 0 0 0;
+}
+
+.purchases {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.purchases__container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.purchases__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.875rem, 0.313rem + 3.13vw, 3.125rem);
+  margin: 0 0 45px 0;
+}
+.purchases__purple {
+  color: #6c5fbc;
+}
+.purchases__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.purchases-card {
+  width: 360px;
+  height: 100px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.purchases-card__container {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+}
+.purchases-card__img {
+  width: 50px;
+  height: 50px;
+}
+.purchases-card__date {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #ACADB9;
+  margin-left: auto;
+}
 .show-translate {
   visibility: visible;
   transform: translateY(0%);
   opacity: 1;
   max-height: 100000px;
+}
+
+body {
+  background-color: #F9F9F9;
 }
