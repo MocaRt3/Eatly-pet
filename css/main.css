@@ -824,14 +824,97 @@ td, th {
   height: 50px;
 }
 .purchases-card__texts {
-  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: #323142;
+  margin: 0 0 5px 0;
+}
+.purchases-card__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
 }
 .purchases-card__date {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-  color: #ACADB9;
+  color: #acadb9;
   margin-left: auto;
 }
+.purchases-card__text--red {
+  color: red;
+}
+
+.graphis-block {
+  background-color: #fff;
+  border-radius: 12px;
+  height: 100%;
+}
+.graphis-block__date {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 35px 0 35px;
+  margin: 0 0 35px 0;
+}
+.graphis-block__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+}
+.graphis-block__wrapper-graph {
+  border: solid 1px #EDF2F7;
+  margin: 0 35px 25px 35px;
+  border-radius: 12px;
+}
+.graphis-block__wrapper-graph-two {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 15px;
+}
+.graphis-block__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbd9ee;
+  border-radius: 50%;
+  padding: 12px;
+}
+.graphis-block__icon--green {
+  background-color: #c9dfd1;
+}
+.graphis-block__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.graphis-block__line {
+  width: 410px;
+  height: 10px;
+  background-color: #6c5fbc;
+  border-radius: 12px;
+  margin: 20PX;
+  position: relative;
+}
+.graphis-block__sub-line {
+  width: 65%;
+  height: 10px;
+  background-color: #4300df;
+  opacity: 1;
+  border-radius: 12px;
+  position: absolute;
+  z-index: 2;
+}
+.graphis-block__line--another {
+  background-color: #cf9d3f;
+}
+.graphis-block__sub-line--another {
+  background-color: #ffa600;
+  opacity: 1;
+}
+
 .show-translate {
   visibility: visible;
   transform: translateY(0%);
