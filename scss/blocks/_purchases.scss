@@ -96,6 +96,7 @@
     background-color: #fff;
     border-radius: 12px;
     height: 100%;
+    
     &__date {
         display: flex;
         justify-content: space-between;
@@ -110,20 +111,46 @@
     }
 
     &__select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        border: none;
+        outline: none;
+        width: 100px;
+        background-color: #fafafa;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative; /* Добавляем позиционирование */
+        box-sizing: border-box;
+    }
+     &__select-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+     }
+
+    &__select-cont::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-image: url('/img/icons/arrowBottom.svg');
+        background-repeat: no-repeat;
+        margin-top: 15px;
+        margin-left: 5px;
     }
 
     &__wrapper-graph {
-        border: solid 1px #EDF2F7;
+        border: solid 1px #edf2f7;
         margin: 0 35px 25px 35px;
         border-radius: 12px;
     }
 
-    &__wrapper-graph-two{
+    &__wrapper-graph-two {
         display: flex;
         align-items: center;
         column-gap: 10px;
         padding: 15px;
-        
     }
 
     &__icon {
@@ -133,10 +160,9 @@
         background-color: #dbd9ee;
         border-radius: 50%;
         padding: 12px;
-
     }
 
-    &__icon--green{
+    &__icon--green {
         background-color: #c9dfd1;
     }
 
@@ -148,16 +174,22 @@
     }
 
     &__sub-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
     }
 
     &__text {
         font-family: 'Poppins', sans-serif;
         font-size: 14px;
         font-weight: 500;
-        color: #A0AEC0;
+        color: #a0aec0;
     }
 
     &__price {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
     }
 
     &__line {
@@ -165,9 +197,8 @@
         height: 10px;
         background-color: #6c5fbc;
         border-radius: 12px;
-        margin: 20PX;
+        margin: 20px;
         position: relative;
-        
     }
 
     &__sub-line {
@@ -188,4 +219,33 @@
         background-color: #ffa600;
         opacity: 1;
     }
+}
+
+@media(max-width: 1200px){
+    .purchases__container{
+        flex-direction: column;
+        gap: 50px;
+        align-items: start;
+    }
+}
+
+@media(max-width: 800px){
+    .graphis-block{
+        width: 100%;
+
+        &__date{
+            padding: 10px;
+        }
+
+        &__wrapper-graph{
+            margin: 10px;
+        }
+        
+        &__line{
+            width: 90%;
+        }
+    }
+     .purchases-card{
+        width: 300px;
+     }
 }

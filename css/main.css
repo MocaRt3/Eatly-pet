@@ -862,8 +862,35 @@ td, th {
   font-size: 26px;
   font-weight: 800;
 }
+.graphis-block__select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  width: 100px;
+  background-color: #fafafa;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative; /* Добавляем позиционирование */
+  box-sizing: border-box;
+}
+.graphis-block__select-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.graphis-block__select-cont::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/img/icons/arrowBottom.svg");
+  background-repeat: no-repeat;
+  margin-top: 15px;
+  margin-left: 5px;
+}
 .graphis-block__wrapper-graph {
-  border: solid 1px #EDF2F7;
+  border: solid 1px #edf2f7;
   margin: 0 35px 25px 35px;
   border-radius: 12px;
 }
@@ -891,18 +918,28 @@ td, th {
   align-items: center;
   width: 100%;
 }
+.graphis-block__sub-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
 .graphis-block__text {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: #A0AEC0;
+  color: #a0aec0;
+}
+.graphis-block__price {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
 }
 .graphis-block__line {
   width: 410px;
   height: 10px;
   background-color: #6c5fbc;
   border-radius: 12px;
-  margin: 20PX;
+  margin: 20px;
   position: relative;
 }
 .graphis-block__sub-line {
@@ -922,6 +959,30 @@ td, th {
   opacity: 1;
 }
 
+@media (max-width: 1200px) {
+  .purchases__container {
+    flex-direction: column;
+    gap: 50px;
+    align-items: start;
+  }
+}
+@media (max-width: 800px) {
+  .graphis-block {
+    width: 100%;
+  }
+  .graphis-block__date {
+    padding: 10px;
+  }
+  .graphis-block__wrapper-graph {
+    margin: 10px;
+  }
+  .graphis-block__line {
+    width: 90%;
+  }
+  .purchases-card {
+    width: 300px;
+  }
+}
 .show-translate {
   visibility: visible;
   transform: translateY(0%);
