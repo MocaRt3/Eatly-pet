@@ -889,6 +889,13 @@ td, th {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+.graphis-block__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #A0AEC0;
 }
 .graphis-block__line {
   width: 410px;
