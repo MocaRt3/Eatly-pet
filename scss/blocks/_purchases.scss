@@ -11,14 +11,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 0 100px 0;
     &__container {
         display: flex;
         justify-content: space-between;
         width: 90%;
     }
 
-    &__text-block {
-    }
 
     &__title {
         font-family: 'Poppins', sans-serif;
@@ -37,11 +36,6 @@
         gap: 30px;
     }
 
-    &__card {
-    }
-
-    &__graphis-block {
-    }
 }
 .purchases-card {
     width: 360px;
@@ -78,8 +72,7 @@
         margin: 0 0 5px 0;
     }
 
-    &__text {
-    }
+
 
     &__date {
         font-family: 'Poppins', sans-serif;

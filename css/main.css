@@ -784,6 +784,7 @@ td, th {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 0 100px 0;
 }
 .purchases__container {
   display: flex;
@@ -804,6 +805,7 @@ td, th {
   flex-direction: column;
   gap: 30px;
 }
+
 .purchases-card {
   width: 360px;
   height: 100px;
@@ -981,6 +983,91 @@ td, th {
   }
   .purchases-card {
     width: 300px;
+  }
+}
+.email-sale {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 100px 0;
+}
+.email-sale__container {
+  width: 70%;
+  height: 320px;
+  background: linear-gradient(to bottom, #6c5fbc 80%, #f9f9f9 80%);
+  border-radius: 10px;
+}
+.email-sale__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.email-sale__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 70px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+}
+.email-sale__form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+.email-sale__button {
+  text-transform: uppercase;
+}
+.email-sale__img {
+  width: 300px;
+  height: 300px;
+}
+
+@media (max-width: 1200px) {
+  .email-sale__container {
+    height: 400px;
+  }
+  .email-sale__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-sale__title {
+    text-align: center;
+  }
+  .email-sale__form {
+    margin: 0 0 30px 0;
+  }
+  .email-sale__img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .email-sale__container {
+    width: 90%;
+    height: 400px;
+  }
+  .email-sale__content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+  }
+  .email-sale__title {
+    font-size: 50px;
+  }
+  .email-sale__input {
+    width: 140px;
+  }
+  .email-sale__input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .email-sale__input::placeholder {
+    font-size: 12px;
+  }
+  .email-sale__button {
+    padding: 8px 20px;
+  }
+  .email-sale__img {
+    width: 200px;
+    height: 200px;
   }
 }
 .show-translate {
