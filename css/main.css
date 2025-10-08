@@ -1070,6 +1070,34 @@ td, th {
     height: 200px;
   }
 }
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__navigation {
+  width: 90vw;
+}
+
+.own {
+  margin: 100px 0 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.own__text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #999999;
+}
+.own__iconc {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.navigation__container--foot {
+  width: 100%;
+}
+
 .show-translate {
   visibility: visible;
   transform: translateY(0%);

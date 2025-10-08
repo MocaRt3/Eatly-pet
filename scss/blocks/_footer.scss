@@ -1,0 +1,37 @@
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+
+    &__navigation{
+        width: 90vw;
+    }
+}
+
+
+.own {
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+
+		&__text {
+            font-family: 'Inter',sans-serif;
+
+            font-weight: 500;
+            color: #999999;
+		}
+
+		&__iconc {
+            display: flex;
+            column-gap: 10px;
+		}
+
+		&__icon {
+		}
+}
+
+.navigation__container--foot{
+    width: 100%;
+}
